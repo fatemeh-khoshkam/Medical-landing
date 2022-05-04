@@ -1,0 +1,43 @@
+.btn {
+  font-family: inherit;
+  padding: 1.1rem 2.5rem;
+  outline: 0;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+ } 
+  .btn__primary {
+    color: var(--white-color);
+    background: var(--main-color);
+    border: 0;
+  }
+  .btn__primary:hover {
+    
+  }
+  .btn__secondary {
+    color: var(--primary-color);
+    background: var(--primary-color-2);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 1;
+    gap: 1rem;
+    border-color: transparent;
+  }
+  

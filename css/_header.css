@@ -1,0 +1,33 @@
+.nav{
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+.nav__logo i{
+  background-color: var(--main-color);
+  padding: 1rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--white-color);
+  font-size: 3rem;
+}
+.nav__logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav__logo a{
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+.nav__link{
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.nav__login{
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.nav__signIn{
+  font-weight: 400;
+}

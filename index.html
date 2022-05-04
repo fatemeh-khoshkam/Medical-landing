@@ -1,0 +1,175 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="image/01-Header/WeCare.ico"
+            type="image/x-icon"
+        />
+        <title>Medical</title>
+        <!-- font style -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
+        <!-- layout style -->
+        <link rel="stylesheet" href="css/_layout.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="nav flex_center justify-content-between">
+                    <div class="nav__left flex_center gap-5">
+                        <div class="nav__logo">
+                            <a href="#" class="gap-1 flex_center">
+                                <i class="fa-solid fa-circle-plus"></i>
+                                We.care
+                            </a>
+                        </div>
+                        <ul class="nav__list flex gap-25">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Find a Doctor</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link"
+                                    >Find a Hospital</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Health A to Z</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav__right flex_center gap-1">
+                        <a href="#" class="nav__login">Log in</a>
+                        <button
+                            type="button"
+                            class="btn btn__primary nav__signIn"
+                        >
+                            Sign in
+                        </button>
+                    </div>
+                </nav>
+                <div class="header__hero flex gap-5">
+                    <div class="header__title flex gap-3">
+                        <h1>
+                            Fell better about
+                            <br />
+                            finding healthcare
+                        </h1>
+                        <p>
+                            At Healthgrades, we take the guesswork out of
+                            finding the right <br />
+                            doctors, hospitals, and care for youand your family.
+                        </p>
+                        <div class="header__cardBox flex gap-2">
+                            <div class="header__card flex_center gap-1">
+                                <img src="image/01-Header/team.png" alt="" />
+                                <h4>
+                                    Profiles for Every<br />
+                                    Doctor in America
+                                </h4>
+                            </div>
+                            <div class="header__card flex_center gap-1">
+                                <img src="image/01-Header/rating.png" alt="" />
+                                <h4>
+                                    More than 10 Million<br />
+                                    Patient Ratings
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__img flex_center">
+                        <img src="image/01-Header/hero-doctor-1.png" alt="" />
+                        <div class="header__circle">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <i class="fa-solid fa-capsules"></i>
+                            <i class="fa-solid fa-syringe"></i>
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            <i class="fa-solid fa-truck-medical"></i>
+                        </div>
+                        <div class="header__circle">
+                            <i class="fa-solid fa-stethoscope"></i>
+                            <i class="fa-solid fa-house-chimney-medical"></i>
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <i class="fa-solid fa-tooth"></i>
+                            <i class="fa-solid fa-bed-pulse"></i>
+                        </div>
+                        <div class="header__background--shape"></div>
+                        <div class="header__background--shape"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="searchBar container">
+                <div class="searchBar__banner flex gap-2">
+                    <div class="searchBar__fields flex_center">
+                        <div class="searchBar__item">
+                            <div class="form-group">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input
+                                    class="form-input"
+                                    type="text"
+                                    id="search"
+                                    placeholder="Search Doctor, Conditions or Procedures"
+                                />
+                            </div>
+                        </div>
+                        <div class="searchBar__item">
+                            <div class="form-group">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <input
+                                    class="form-input"
+                                    type="text"
+                                    id="search"
+                                    placeholder="Set your location"
+                                />
+                            </div>
+                        </div>
+                        <div class="searchBar__item">
+                            <button type="button" class="btn btn__primary">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="searchBar__content flex gap-2">
+                        <p>You may be looking for</p>
+                        <div class="searchBar__tags flex">
+                            <button type="button" class="btn btn__secondary">
+                                Family Medicine
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <button type="button" class="btn btn__secondary">
+                                Pediatrics
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <button type="button" class="btn btn__secondary">
+                                Top Hospital
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <button type="button" class="btn btn__secondary">
+                                Telehealth
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <button type="button" class="btn btn__secondary">
+                                COVID-19
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <button type="button" class="btn btn__secondary">
+                                Orthopedic Surgery
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <button type="button" class="btn btn__secondary">
+                                More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

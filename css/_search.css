@@ -1,0 +1,39 @@
+
+.searchBar__banner{
+    background-color: var(--white-color);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-top:-17rem; 
+    box-shadow: rgb(0 0 0 / 7%) 0px 5px 20px 0px;
+    flex-direction: column;
+    z-index: 4;
+}
+.searchBar__item{
+    -ms-flex: 0 0 44%;
+    flex: 0 0 44%;
+    max-width: 44%;
+} 
+.searchBar__item:last-child{
+    -ms-flex: 0 0 6%;
+    flex: 0 0 6%;
+    max-width: 6%;
+}
+.searchBar__fields .btn{
+    padding: 2rem;
+}
+.searchBar__content{
+    flex-direction: column;
+}
+.searchBar__content p{
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+.searchBar__tags , .searchBar__fields{
+    justify-content: space-between;
+}
+.searchBar__tags .btn__secondary:last-child{
+    color: var(--main-color);
+    background: var(--primary-color-1);
+}

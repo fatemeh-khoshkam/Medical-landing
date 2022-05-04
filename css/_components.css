@@ -1,0 +1,19 @@
+/* ------------------- */
+/* Compontents         */
+/* ------------------- */
+.form-group{
+    position: relative;
+}
+.form-group i{
+    position: absolute;
+    top: 2rem;
+    left: 1.2rem;
+}
+.form-input{
+    padding: 1.9rem 3.7rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 0.1rem solid #ccc;
+    width: 100%;
+    background-color: #f4f8fa;
+}
