@@ -1,0 +1,95 @@
+.specialist .container{
+    flex-direction: column;
+}
+.specialist__title{
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+.specialist__title h2{
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+.specialist__descrip{
+    color: var(--primary-color-7);
+    font-weight: 400;
+}
+.specialist__team{
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 3rem;
+}
+.specialist__item{
+    box-shadow: 0 0 1.2rem 0 #cacaca;
+    padding: 2rem;
+    border-radius: 1rem;
+    -webkit-transition: all 0.5s ease-in 0.1s;
+    -o-transition: all 0.5s ease-in 0.1s;
+    transition: all 0.5s ease-in 0.1s;
+}
+.specialist__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+.specialist__content h3{
+    color: var(--primary-color);
+}
+.specialist__content p{
+    color: var(--primary-color-7);
+}
+.specialist__image{
+    position: relative;
+    -webkit-transition: all 0.5s ease-in 0.1s;
+    -o-transition: all 0.5s ease-in 0.1s;
+    transition: all 0.5s ease-in 0.1s;
+}
+.specialist__image img{
+    background-color: var(--primary-color-4);
+    border-radius: 1rem;
+    aspect-ratio: 1 / 1;
+}
+.specialist__image button{
+    position: absolute;
+    bottom: 7rem;
+    left: 5.5rem;
+    box-shadow: 0 0 1.2rem 0 #2c2c2cc9;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(0.5rem, -3.5rem);
+    transition: all 0.3s ease-in-out;
+}
+.specialist__image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    background: -moz-linear-gradient(  to bottom, rgb(59 102 229 / 61%) 2%, rgb(137 186 233 / 60%) 82%  );
+    background: -webkit-linear-gradient( to bottom, rgb(59 102 229 / 61%) 2%, rgb(137 186 233 / 60%) 82% );
+    background: linear-gradient( to bottom, rgb(59 102 229 / 61%) 2%, rgb(137 186 233 / 60%) 82% );
+    z-index: 2;
+    -webkit-transition: all 0.5s ease-in 0.1s;
+    -o-transition: all 0.5s ease-in 0.1s;
+    transition: all 0.5s ease-in 0.1s;
+    opacity: 0;
+}
+.specialist__item:hover .specialist__image::before {
+    opacity: 1;
+    border-radius: 1rem;
+}
+.specialist__item:hover {
+    cursor: pointer;
+    transform: translateY(-0.8rem);
+    box-shadow: 0.09rem 0rem 1.5rem 0 rgb(59 102 229 / 44%);
+}
+.specialist__item:hover .specialist__image button{
+    bottom: 3.5rem;
+    opacity: 1;
+    z-index: 3;
+}

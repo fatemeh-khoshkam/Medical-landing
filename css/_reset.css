@@ -19,6 +19,18 @@ body {
   background: linear-gradient(141deg, #fff 0%, #f7f7f7 51%, #f2f8f2 75%);
 }
 
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 4rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(107, 155, 252, 0.623);
+  border-radius: 2rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -43,4 +55,40 @@ section {
 }
 textarea {
   resize: none;
+}
+#scroll--top {
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  padding: 1.5rem;
+  box-shadow: rgb(0 0 0 / 24%) 0.2rem 0.1rem 2rem 0rem;
+  background-color: var(--white-color);
+  border-radius: 3rem;
+  align-items: center;
+  color: var(--main-color);
+  -webkit-transition: all 0.5s ease, opacity 0.5s ease-in-out,
+      visibility 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease, opacity 0.5s ease-in-out,
+      visibility 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease, opacity 0.5s ease-in-out,
+      visibility 0.5s ease-in-out;
+  -o-transition: all 0.5s ease, opacity 0.5s ease-in-out,
+      visibility 0.5s ease-in-out;
+  transition: all 0.5s ease, opacity 0.5s ease-in-out,
+      visibility 0.5s ease-in-out;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 4.5rem;
+  height: 4.5rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.scroll--top--show {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+#scroll--top:hover {
+  transform: translateY(-5%);
 }
