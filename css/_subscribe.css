@@ -1,0 +1,24 @@
+.subscribe__box{
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    padding: 4rem;
+}
+.subscribe__title{
+    font-size: 3rem;
+    color: var(--white-color);
+    padding-bottom: 3rem;
+    line-height: 2;
+}
+.subscribe__input{
+    width: 80%;
+    margin: 0 auto;
+}
+.subscribe__input button{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    background-color: var(--primary-color);
+}

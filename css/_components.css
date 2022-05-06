@@ -17,3 +17,18 @@
     width: 100%;
     background-color: #f4f8fa;
 }
+.pagination__list{
+    justify-content: center;
+    padding-top: 3rem;
+}
+.pagination__btn{
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: var(--primary-color-1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pagination__btn.pagination__btn--active{
+    background-color: var(--white-color);
+    box-shadow: 0 0 0 0.2rem var(--main-color), 0 0 0 0.2rem var(--main-color);
+}
