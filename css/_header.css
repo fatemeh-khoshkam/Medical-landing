@@ -1,6 +1,12 @@
+header{
+  background-color: var(--primary-color-2);
+  padding-top: 2rem;
+}
 .nav{
-  -ms-flex-pack: space-between;
-  justify-content: space-between;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: 3.5rem;
 }
 .nav__logo i{
   background-color: var(--main-color);
@@ -30,4 +36,191 @@
 }
 .nav__signIn{
   font-weight: 400;
+}
+.nav__btn{
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    display: none;
+}
+.nav__right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  background: rgb(166 170 198 / 71%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.header__icon{
+  position: absolute;
+  padding: 1rem;
+  border-radius: 50%;
+  aspect-ratio: 1/ 1;
+}
+.header__icon i{
+  position: absolute;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  color: var(--main-color);
+}
+/*1*/
+.header__img .header__icon:nth-child(2){
+  width: 40%;
+  z-index: 4;
+  border: 0.2rem dashed #2f6ac1;
+  animation: circle 10000ms linear infinite;
+  animation-direction: reverse;
+}
+.header__img .header__icon:nth-child(2) i{
+  top: 2rem;
+}
+/*2*/
+.header__img .header__icon:nth-child(3){
+  width: 55%;
+  background-color: #beddefad;
+  box-shadow: -0.5rem 0rem 1rem #bac9e778, 0.5rem 0.2rem 1rem #b5b9c1;
+  z-index: 3;
+  animation: circle 10000ms linear infinite;
+}
+.header__img .header__icon:nth-child(3) i{
+  top: 7rem;
+  right: 0;
+}
+/*3*/
+.header__img .header__icon:nth-child(4){
+  width: 70%;
+  border: 0.2rem dashed #8fb3de;
+  z-index: 2;
+  animation: circle 10000ms linear infinite;
+  animation-direction: reverse;
+}
+.header__img .header__icon:nth-child(4) i:nth-child(1){
+  bottom: 7rem;
+  left: 2rem;
+}
+.header__img .header__icon:nth-child(4) i:nth-child(2){
+  bottom: 14rem;
+  right: -1rem;
+}
+.header__img .header__icon:nth-child(4) i:nth-child(3){
+  top: -1rem;
+  left: 12rem;
+}
+/*4*/
+.header__img .header__icon:nth-child(5){
+  width: 85%;
+  background-color: #cfe6fc73;
+  box-shadow: -0.5rem 0rem 1rem #b9c7e15c, 0.5rem 0.2rem 1rem #b5b9c1;
+  z-index: 1;
+  animation: expand 17000ms linear infinite ;
+}
+.header__img .header__icon:nth-child(5) i:nth-child(1){
+  bottom: 17rem;
+  left: -1rem;
+}
+.header__img .header__icon:nth-child(5) i:nth-child(2){
+  top: 2rem;
+  left: 10rem;
+}
+.header__img .header__icon:nth-child(5) i:nth-child(3){
+  right: -1rem;
+  top: 17rem;
+}
+
+
+
+
+
+@media screen and (max-width: 992px){
+  .nav{
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center; 
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header > .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+  .nav__right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: #0a172e;
+    background-color: #fff;
+    display: flex;
+    min-height: 100%;
+    width: min(100%, 30rem);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    justify-content: space-between;
+    justify-items: center;
+    flex-direction: column;
+  }
+  .nav__list{
+    flex-direction: column;
+    padding-top: 10rem;
+    width: 100%;
+    text-align: center;
+  }
+  .nav__item{
+    border-bottom: 0.1rem solid var(--primary-color-4);
+    padding-bottom: 1rem;
+  }
+  .nav__btns{
+    padding-bottom: 3rem;
+  }
+  .nav__right--open {
+    transform: translateX(0);
+    z-index: 100;
+  }
+  .header > .container .nav__btn {
+    display: grid;
+    width: min-content;
+  }
+  .header > .container .nav__btn--close {
+    position: absolute;
+    right: 0;
+}
+.header > .nav__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 }

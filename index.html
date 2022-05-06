@@ -29,6 +29,19 @@
                                 We.care
                             </a>
                         </div>
+                    </div>
+                    <button id="nav-open" class="btn nav__btn nav__btn--open">
+                        ☰
+                    </button>
+                    <div class="overlay"></div>
+                    <div class="nav__right gap-1" id="menu">
+                        <button
+                            id="nav-close"
+                            class="btn nav__btn nav__btn--close"
+                        >
+                            ✕
+                        </button>
+
                         <ul class="nav__list flex gap-25">
                             <li class="nav__item">
                                 <a href="#" class="nav__link">Find a Doctor</a>
@@ -42,74 +55,84 @@
                                 <a href="#" class="nav__link">Health A to Z</a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="nav__right flex_center gap-1">
-                        <a href="#" class="nav__login">Log in</a>
-                        <button
-                            type="button"
-                            class="btn btn__primary nav__signIn"
-                        >
-                            Sign in
-                        </button>
+                        <div class="nav__btns flex_center gap-2">
+                            <a href="#" class="nav__login">Log in</a>
+                            <button
+                                type="button"
+                                class="btn btn__primary nav__signIn"
+                            >
+                                Sign in
+                            </button>
+                        </div>
                     </div>
                 </nav>
-                <div class="header__hero flex gap-5">
-                    <div class="header__title flex gap-3">
-                        <h1>
-                            Fell better about
-                            <br />
-                            finding healthcare
-                        </h1>
-                        <p>
-                            At Healthgrades, we take the guesswork out of
-                            finding the right <br />
-                            doctors, hospitals, and care for youand your family.
-                        </p>
-                        <div class="header__cardBox flex gap-2">
-                            <div class="header__card flex_center gap-1">
-                                <img src="image/01-Header/team.png" alt="" />
-                                <h4>
-                                    Profiles for Every<br />
-                                    Doctor in America
-                                </h4>
-                            </div>
-                            <div class="header__card flex_center gap-1">
-                                <img src="image/01-Header/rating.png" alt="" />
-                                <h4>
-                                    More than 10 Million<br />
-                                    Patient Ratings
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header__img flex_center">
-                        <img src="image/01-Header/hero-doctor-1.png" alt="" />
-                        <div class="header__circle">
-                            <i class="fa-solid fa-circle-plus"></i>
-                            <i class="fa-solid fa-capsules"></i>
-                            <i class="fa-solid fa-syringe"></i>
-                            <i class="fa-solid fa-heart-pulse"></i>
-                            <i class="fa-solid fa-truck-medical"></i>
-                        </div>
-                        <div class="header__circle">
-                            <i class="fa-solid fa-stethoscope"></i>
-                            <i class="fa-solid fa-house-chimney-medical"></i>
-                            <i class="fa-solid fa-circle-plus"></i>
-                            <i class="fa-solid fa-tooth"></i>
-                            <i class="fa-solid fa-bed-pulse"></i>
-                        </div>
-                        <div class="header__background--shape"></div>
-                        <div class="header__background--shape"></div>
-                    </div>
-                </div>
             </div>
         </header>
         <main>
-            <section class="searchBar container">
-                <div class="searchBar__banner flex gap-2">
-                    <div class="searchBar__fields flex_center">
-                        <div class="searchBar__item">
-                            <div class="form-group">
+            <section class="hero__wrapper">
+                <div class="container">
+                    <div class="header__hero">
+                        <div class="header__content">
+                            <div class="header__title flex gap-3">
+                                <h1>
+                                    Fell better about
+                                    <br />
+                                    finding healthcare
+                                </h1>
+                                <p>
+                                    At Healthgrades, we take the guesswork out
+                                    of finding the right <br />
+                                    doctors, hospitals, and care for youand your
+                                    family.
+                                </p>
+                                <div class="header__cardBox flex gap-2">
+                                    <div class="header__card flex_center gap-1">
+                                        <img
+                                            src="image/01-Header/team.png"
+                                            alt=""
+                                        />
+                                        <h4>
+                                            Profiles for Every<br />
+                                            Doctor in America
+                                        </h4>
+                                    </div>
+                                    <div class="header__card flex_center gap-1">
+                                        <img
+                                            src="image/01-Header/rating.png"
+                                            alt=""
+                                        />
+                                        <h4>
+                                            More than 10 Million<br />
+                                            Patient Ratings
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__img">
+                                <img
+                                    src="image/01-Header/hero-doctor-1.png"
+                                    alt=""
+                                />
+                                <div class="header__icon">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </div>
+                                <div class="header__icon">
+                                    <i class="fa-solid fa-capsules"></i>
+                                </div>
+                                <div class="header__icon">
+                                    <i class="fa-solid fa-syringe"></i>
+                                    <i class="fa-solid fa-bed-pulse"></i>
+                                    <i class="fa-solid fa-stethoscope"></i>
+                                </div>
+                                <div class="header__icon">
+                                    <i class="fa-solid fa-heart-pulse"></i>
+                                    <i class="fa-solid fa-truck-medical"></i>
+                                    <i class="fa-solid fa-tooth"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="searchBar__banner">
+                            <div class="form-group input-1">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 <input
                                     class="form-input"
@@ -118,9 +141,7 @@
                                     placeholder="Search Doctor, Conditions or Procedures"
                                 />
                             </div>
-                        </div>
-                        <div class="searchBar__item">
-                            <div class="form-group">
+                            <div class="form-group input-2">
                                 <i class="fa-solid fa-location-dot"></i>
                                 <input
                                     class="form-input"
@@ -129,43 +150,65 @@
                                     placeholder="Set your location"
                                 />
                             </div>
-                        </div>
-                        <div class="searchBar__item">
-                            <button type="button" class="btn btn__primary">
+                            <button
+                                type="button"
+                                class="btn btn__primary search"
+                            >
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
-                        </div>
-                    </div>
-                    <div class="searchBar__content flex gap-2">
-                        <p>You may be looking for</p>
-                        <div class="searchBar__tags flex">
-                            <button type="button" class="btn btn__secondary">
-                                Family Medicine
-                                <i class="fa-solid fa-xmark"></i>
-                            </button>
-                            <button type="button" class="btn btn__secondary">
-                                Pediatrics
-                                <i class="fa-solid fa-xmark"></i>
-                            </button>
-                            <button type="button" class="btn btn__secondary">
-                                Top Hospital
-                                <i class="fa-solid fa-xmark"></i>
-                            </button>
-                            <button type="button" class="btn btn__secondary">
-                                Telehealth
-                                <i class="fa-solid fa-xmark"></i>
-                            </button>
-                            <button type="button" class="btn btn__secondary">
-                                COVID-19
-                                <i class="fa-solid fa-xmark"></i>
-                            </button>
-                            <button type="button" class="btn btn__secondary">
-                                Orthopedic Surgery
-                                <i class="fa-solid fa-xmark"></i>
-                            </button>
-                            <button type="button" class="btn btn__secondary">
-                                More
-                            </button>
+                            <div class="searchBar__content flex gap-2">
+                                <p>You may be looking for</p>
+                                <div class="searchBar__tags flex">
+                                    <button
+                                        type="button"
+                                        class="btn btn__secondary"
+                                    >
+                                        Family Medicine
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn__secondary"
+                                    >
+                                        Pediatrics
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn__secondary"
+                                    >
+                                        Top Hospital
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn__secondary"
+                                    >
+                                        Telehealth
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn__secondary"
+                                    >
+                                        COVID-19
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn__secondary"
+                                    >
+                                        Orthopedic Surgery
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn__secondary"
+                                    >
+                                        More
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
