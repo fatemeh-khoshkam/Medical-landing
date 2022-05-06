@@ -1,4 +1,9 @@
+.findDoctor__wrapper{
+    display: grid;
+    grid-template-areas: "findContent findImg";
+}
 .findDoctor__left{
+    grid-area: findContent;
     flex-direction: column;
 }
 .findDoctor__left h2{
@@ -70,34 +75,42 @@
     box-shadow: 0rem 0.5rem 1.3rem 0.05rem rgb(143 134 134 / 50%);
 }
 .findDoctor__right{
+    opacity: 1;
+    visibility: visible;
+    grid-area: findImg;
+    display: grid;
+    justify-items: start;
+    justify-content: center;
     position: relative;
+    width: 100%;
+    align-items: center;
 }
-.findDoctor__right img{
-    position: relative;
+.findDoctor__right img {
+    width: 100%;
+    height: 48rem;
+    object-fit: cover;
     z-index: 1;
     border-radius: 0% 100% 38% 62% / 75% 0% 100% 18%;
-    bottom: -9rem;
-    left: 4rem;
 }
 .findDoctor__circle{
     position: absolute;
     border-radius: 53% 47% 70% 30% / 51% 56% 44% 49%;
 }
-.findDoctor__circle:nth-child(2){
+.findDoctor__bg .findDoctor__circle:nth-child(1){
     width: 35rem;
     height: 35rem;
     background-color: var(--primary-color-1);
     bottom: 7rem;
     left: 16rem;
 }
-.findDoctor__circle:nth-child(3){
+.findDoctor__bg .findDoctor__circle:nth-child(2){
     width: 30rem;
     height: 30rem;
     border: 0.2rem dashed #9d99f1;
     bottom: 10rem;
     left: 18rem;
 }
-.findDoctor__circle:nth-child(4){
+.findDoctor__bg .findDoctor__circle:nth-child(3){
     width: 42rem;
     height: 42rem;
     border: 0.2rem dashed #c6c4f5;
@@ -105,5 +118,43 @@
     left: 13rem;
 }
 .findDoctor__form{
-    width: 26rem;
+    position: absolute;
+    width: 20rem;
+    bottom: 8rem;
+}
+.findDoctor__searchBar{
+    background-color: var(--white-color);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 7%) 0px 5px 20px 0px;
+    z-index: 6;
+    flex-direction: column;
+}
+.findDoctor__bg{
+    position: relative;
+}
+
+@media screen and (max-width: 1400px){
+    .findDoctor__wrapper {
+        display: grid;
+        grid-template-areas: "findContent findImg findImg";
+    }
+}
+@media screen and (max-width: 1300px){
+    .findDoctor__bg {
+        right: 6rem;
+    }
+}
+@media screen and (max-width: 1135px){
+    .findDoctor__bg {
+        right: 10rem;
+    }
+}
+@media screen and (max-width: 1000px){
+    .findDoctor__right{
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
 }
