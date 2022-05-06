@@ -258,4 +258,35 @@
         grid-template-columns: repeat(1,auto);
 }
 }
+@media screen and (max-width: 470px){
+    .popularSearch {
+        padding-top: 40rem;
+    }
+    .header__content {
+        -webkit-transform: translateY(25%);
+        transform: translateY(40%);
+        margin-top: -40rem;
+        display: grid;
+        grid-template-areas:
+            "title"
+            "img";
+    }
+    .header__title h1 {
+        font-size: 4rem;
+    }
+    .header__title{
+        margin-bottom: 0rem;
+    }
+    .header__img img {
+       height: 100%;
+    }
+  .searchBar__banner{
+    grid-template-areas:
+        "input-1"
+        "input-2"
+        "search"
+        "looking";
+        grid-template-columns: repeat(1,auto);
+}
+}
 
