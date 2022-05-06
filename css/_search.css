@@ -226,14 +226,26 @@
 .popularSearch {
     padding-top: 26rem;
 }
+.popularSearch__items{
+    display: flex;
+    flex-direction: column;
 }
+.popularSearch__category{
+    border-right: none;
+    border-bottom: 0.3rem solid var(--main-color);
+}
+.popularSearch__list{
+    border-radius: 1rem;
+}
+}
+
 @media screen and (max-width: 640px){
     .popularSearch {
         padding-top: 32rem;
     }
     .header__content {
-        -webkit-transform: translateY(25%);
-        transform: translateY(30%);
+        -webkit-transform: translateY(33%);
+        transform: translateY(33%);
         margin-top: -34rem;
         display: grid;
         grid-template-areas:
@@ -263,8 +275,8 @@
         padding-top: 40rem;
     }
     .header__content {
-        -webkit-transform: translateY(25%);
-        transform: translateY(40%);
+        -webkit-transform: translateY(44%);
+        transform: translateY(44%);
         margin-top: -40rem;
         display: grid;
         grid-template-areas:
