@@ -51,7 +51,7 @@
     gap: 0.3rem;
 }
 .feedback__rating i{
-    color: #ded06b;
+    color: gold;
 }
 .feedback__description{
     line-height: 2;

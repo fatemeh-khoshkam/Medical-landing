@@ -92,17 +92,25 @@
     padding: 3rem 1rem;
     border-radius: 0.5rem;
     align-items: center;
-    transition: all 500ms ease-in-out;
+    transition: all 1500ms ease-in-out;
+}
+.popularSearch__item:hover, .popularSearch__item:focus {
+    color: var(--main-color);
+    background: rgb(137 186 233 / 55%);
+    transform: translateY(-0.7rem);
+    cursor: pointer;
 }
 .popularSearch__item p{
     font-weight: bold;
     color: var(--primary-color);
     text-align: center;
 }
-.popularSearch__item:hover{
-    transform : translateY(-0.7rem);
-    cursor: pointer;
+.popularSearch__item:hover .popularSearch__itemImg{
+    animation: expand 5000ms infinite linear;
 } 
+.popularSearch__item:hover p{
+    color: var(--primary-color);
+}
 .popularSearch__itemImg{
     border-radius: 50%;
     width: 8rem;

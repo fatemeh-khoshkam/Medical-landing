@@ -24,6 +24,9 @@
     position: inherit;
     width: 100%;
 }
+.subscribe__box .form-group input{
+    box-shadow: 0.09rem 0rem 1.5rem 0 rgb(60 65 79);
+}
 @media screen and (max-width: 900px){
     .subscribe__box{
         width: 100%;

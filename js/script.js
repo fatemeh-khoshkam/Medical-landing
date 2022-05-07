@@ -1,7 +1,8 @@
-'use strict';
+'use strict'; 
 
 /***  scroll  ***/
 const scroll_btn = document.getElementById("scroll--top");
+const navigation = document.getElementById('header');
 
 scroll_btn.addEventListener("click", () => {
   window.scrollTo(0, 0);
@@ -15,6 +16,15 @@ window.addEventListener("scroll", () => {
   if (scrollTop === 0) {
     scroll_btn.classList.remove("scroll--top--show");
   }
+});
+window.addEventListener("scroll", function () {
+    
+    let scroll_Y = window.scrollY;
+    if (scroll_Y >= 75) {
+        navigation.classList.add("nav--sticky");
+    } else {
+        navigation.classList.remove("nav--sticky");
+    }
 });
 
 /***  popular search tabs  ***/

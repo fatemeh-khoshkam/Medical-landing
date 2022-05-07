@@ -3,8 +3,25 @@ header{
   background-color: var(--primary-color-2);
   padding-top: 2rem;
   background: #C9D6FF;
-    background: -webkit-linear-gradient(to top, #d9e3f3, #C9D6FF);
-    background: linear-gradient(to top, #d9e3f3, #C9D6FF);
+  background: -webkit-linear-gradient(to top, #d9e3f3, #C9D6FF);
+  background: linear-gradient(to top, #d9e3f3, #C9D6FF);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 2rem;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav--sticky{
+  position: fixed;
+  z-index: 100;
+  padding: 2rem;
+  box-shadow: 0rem 1rem 2rem 0 rgb(117 147 158 / 28%);
+  margin: 0 auto;
 }
 .nav{
   display: grid;
@@ -30,9 +47,17 @@ header{
   font-size: 2.5rem;
 }
 .nav__link{
-  color: var(--primary-color);
-  font-size: 1.5rem;
   font-weight: 600;
+  font-size: 1.5rem;
+  background: linear-gradient( to right, #364688, #4bbee6 50%, var(--primary-color) 50% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+.nav__link:hover {
+  background-position: 0 100%;
 }
 .nav__login{
   font-weight: 500;
@@ -87,10 +112,10 @@ header{
   width: 40%;
   z-index: 4;
   border: 0.2rem dashed #2f6ac1;
-  animation: circle 10000ms linear infinite;
-  animation-direction: reverse;
+  animation: rotateCircle 20000ms infinite linear;
 }
 .header__img .header__icon:nth-child(2) i{
+  animation: rotateIcon 20000ms infinite linear;
   top: 2rem;
 }
 /*2*/
@@ -99,9 +124,10 @@ header{
   background-color: #beddefad;
   box-shadow: -0.5rem 0rem 1rem #bac9e778, 0.5rem 0.2rem 1rem #b5b9c1;
   z-index: 3;
-  animation: circle 10000ms linear infinite;
+  animation: rotateCircle 20000ms infinite linear;
 }
 .header__img .header__icon:nth-child(3) i{
+  animation: rotateIcon 20000ms infinite linear;
   top: 7rem;
   right: 0;
 }
@@ -110,8 +136,10 @@ header{
   width: 70%;
   border: 0.2rem dashed #8fb3de;
   z-index: 2;
-  animation: circle 10000ms linear infinite;
-  animation-direction: reverse;
+  animation: rotateCircle 20000ms infinite linear;
+}
+.header__img .header__icon:nth-child(4) i{
+  animation: rotateIcon 20000ms infinite linear;
 }
 .header__img .header__icon:nth-child(4) i:nth-child(1){
   bottom: 7rem;
@@ -131,7 +159,7 @@ header{
   background-color: #cfe6fc73;
   box-shadow: -0.5rem 0rem 1rem #b9c7e15c, 0.5rem 0.2rem 1rem #b5b9c1;
   z-index: 1;
-  animation: expand 17000ms linear infinite ;
+  animation: expand 20000ms infinite linear;
 }
 .header__img .header__icon:nth-child(5) i:nth-child(1){
   bottom: 17rem;
@@ -147,10 +175,52 @@ header{
 }
 
 
+/* //////// animations ////////// */
 
+@keyframes rotateIcon {
+  0% {
+      transform: rotate(0deg);
+  }
+  
+  100% {
+      transform: rotate(360deg);
+  }
+}
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes expand {
+  0% {
+      transform: scale(1);
+  }
+  25% {
+      transform: scale(1.07);
+  }
+  50% {
+      transform: scale(1);
+  }
+  75% {
+      transform: scale(1.07);
+  }
+  100% {
+      transform: scale(1);
+  }
+} 
 
 
 @media screen and (max-width: 992px){
+  .header__content{
+    display: grid;
+    grid-template-areas: "title" 
+                          "img";
+    gap: 8rem;
+} 
   .nav{
     -webkit-display: flex;
     -moz-display: flex;

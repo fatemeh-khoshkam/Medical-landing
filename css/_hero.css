@@ -1,3 +1,6 @@
+main{
+    padding-top: 5rem;
+}
 .hero__wrapper{
     padding-bottom: 0;
     background-color: var(--primary-color-2);
@@ -154,36 +157,4 @@
 }
 
 
-@media screen and (max-width: 992px){
-    .header__content{
-      display: grid;
-      grid-template-areas: "title" 
-                            "img";
-      gap: 8rem;
-  } 
-  }
-/* //////// animations ////////// */
 
-@keyframes circle {
-    100% {
-        transform: rotateZ(360deg);
-    }
-} 
-
-@keyframes expand {
-    0% {
-        transform: scale(1);
-    }
-    25% {
-        transform: scale(1.07);
-    }
-    50% {
-        transform: scale(1);
-    }
-    75% {
-        transform: scale(1.07);
-    }
-    100% {
-        transform: scale(1);
-    }
-} 

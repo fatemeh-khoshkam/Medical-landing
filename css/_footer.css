@@ -26,6 +26,23 @@
     font-size: 2rem;
     color: var(--primary-color);
 }
+.footer__navLink{
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    cursor: pointer;
+}
 .footer__navLink a{
-    color: var(--primary-color-7);
+    background: linear-gradient( to right, #364688, #4bbee6 50%, var(--primary-color-7) 50% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+.footer__navLink:hover {
+    transform: translateX(0.3rem);
+}
+.footer__navLink:hover a{
+    background-position: 0 100%;
+    font-weight: bold;
 }

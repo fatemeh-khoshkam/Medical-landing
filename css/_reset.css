@@ -58,6 +58,11 @@ section {
 textarea {
   resize: none;
 }
+input:focus {
+  transition: all 0.3s ease-in-out;
+  outline: 0;
+  box-shadow: 0.09rem 0rem 1.5rem 0 rgb(59 102 229 / 44%);
+}
 #scroll--top {
   z-index: 10;
   position: fixed;

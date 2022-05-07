@@ -13,13 +13,23 @@
   transition: all 0.3s ease-in;
  } 
   .btn__primary {
+    border: 0.2rem solid var(--main-color);
     color: var(--white-color);
     background: var(--main-color);
     border: 0;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
   }
-  .btn__primary:hover {
-    
+  .btn__primary:hover,.btn__primary:focus {
+    box-shadow: inset 6.5em 0 0 0 var(--white-color);
+    color: var(--main-color);
+    background: var(--white-color);
+    border: 0.1rem dashed;
   }
+
   .btn__secondary {
     color: var(--primary-color);
     background: var(--primary-color-2);
@@ -39,5 +49,14 @@
     z-index: 1;
     gap: 1rem;
     border-color: transparent;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
   }
-  
+  .btn__secondary:hover,.btn__secondary:focus {
+    box-shadow: inset 30rem 0 0 0 #abc1ff;
+    color: var(--main-color);
+    background: #abc1ff;
+  }
