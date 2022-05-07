@@ -1,7 +1,7 @@
 .subscribe__box{
     text-align: center;
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
     background-color: var(--main-color);
     border-radius: 2rem;
     padding: 4rem;
@@ -13,12 +13,33 @@
     line-height: 2;
 }
 .subscribe__input{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 .subscribe__input button{
-    position: absolute;
-    right: 2rem;
-    top: 1rem;
+    margin-left: -13rem;
     background-color: var(--primary-color);
+}
+.subscribe__box .form-group{
+    position: inherit;
+    width: 100%;
+}
+@media screen and (max-width: 900px){
+    .subscribe__box{
+        width: 100%;
+    }
+    .subscribe__input{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    .subscribe__input button{
+        margin-left: 0;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .subscribe__title {
+        font-size: 1.8rem;
+    }
+
 }

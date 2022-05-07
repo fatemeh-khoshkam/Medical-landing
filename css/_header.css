@@ -1,6 +1,10 @@
+
 header{
   background-color: var(--primary-color-2);
   padding-top: 2rem;
+  background: #C9D6FF;
+    background: -webkit-linear-gradient(to top, #d9e3f3, #C9D6FF);
+    background: linear-gradient(to top, #d9e3f3, #C9D6FF);
 }
 .nav{
   display: grid;
@@ -49,6 +53,7 @@ header{
   justify-content: space-between;
 }
 .overlay {
+  cursor: pointer;
   position: fixed;
   top: 0;
   left: 0;

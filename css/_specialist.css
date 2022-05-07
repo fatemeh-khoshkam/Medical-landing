@@ -39,6 +39,9 @@
     color: var(--primary-color-7);
 }
 .specialist__image{
+    display: grid;
+    justify-items: center;
+    align-items: center;
     position: relative;
     -webkit-transition: all 0.5s ease-in 0.1s;
     -o-transition: all 0.5s ease-in 0.1s;
@@ -52,7 +55,6 @@
 .specialist__image button{
     position: absolute;
     bottom: 7rem;
-    left: 5.5rem;
     box-shadow: 0 0 1.2rem 0 #2c2c2cc9;
     padding: 1rem;
     border-radius: 1rem;

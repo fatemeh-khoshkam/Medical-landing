@@ -1,8 +1,10 @@
 .hero__wrapper{
     padding-bottom: 0;
     background-color: var(--primary-color-2);
+    background: #C9D6FF;
+    background: -webkit-linear-gradient(to bottom, #d9e3f3, #C9D6FF);
+    background: linear-gradient(to bottom, #d9e3f3, #C9D6FF);
 }
-
 
 .header__hero{
     display: grid;
@@ -112,6 +114,7 @@
 .header__circle:nth-child(2) i:nth-child(1){
     top: -1rem;
     right: 12rem;
+
 }
 .header__circle:nth-child(2) i:nth-child(2){
     top: -1rem;
@@ -166,6 +169,7 @@
         transform: rotateZ(360deg);
     }
 } 
+
 @keyframes expand {
     0% {
         transform: scale(1);

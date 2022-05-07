@@ -1,8 +1,15 @@
+.chooseDoctor__wrapper{
+    display: grid;
+    grid-template-areas: "chooseImg chooseContent";
+}
 .chooseDoctor{
     background-color: var(--primary-color-2);
     padding-bottom: 0;
 }
 .chooseDoctor__left{
+    opacity: 1;
+    visibility: visible;
+    grid-area: chooseImg;
     position: relative;
 }
 .chooseDoctor__left img{
@@ -10,7 +17,10 @@
     position: relative;
     height: 50rem;
 }
-.chooseDoctor__bg:nth-child(2){
+.chooseDoctor__imgBG{
+    position: relative;
+}
+.chooseDoctor__imgBG .chooseDoctor__bg:nth-child(1){
     position: absolute;
     background-color: var(--primary-color-1);
     width: 40rem;
@@ -25,7 +35,7 @@
     right: 19rem;
     z-index: 1;
 }
-.chooseDoctor__bg:nth-child(3){
+.chooseDoctor__imgBG .chooseDoctor__bg:nth-child(2){
     position: absolute;
     border: 0.2rem dashed var(--primary-color-5);
     width: 45rem;
@@ -42,7 +52,7 @@
     border-bottom: none;
 }
 
-.chooseDoctor__left .chooseDoctor__bg:nth-child(3)::after {
+.chooseDoctor__left .chooseDoctor__imgBG .chooseDoctor__bg:nth-child(2)::after {
     position: absolute;
     content: "";
     border-radius: 50%;
@@ -53,7 +63,7 @@
     background-color: rgb(72, 127, 226);
     animation: goDown 4000ms linear infinite;
 }
-.chooseDoctor__left .chooseDoctor__bg:nth-child(2)::after {
+.chooseDoctor__left .chooseDoctor__imgBG .chooseDoctor__bg:nth-child(1)::after {
     position: absolute;
     content: "";
     border-radius: 50%;
@@ -71,6 +81,22 @@
     border-radius: 50%;
     filter: brightness(0.7);
     right: -1rem;
+}
+.chooseDoctor__left img.bg::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color-1);
+    width: 40rem;
+    height: 40rem;
+    -webkit-border-top-left-radius: 15rem;
+    -webkit-border-top-right-radius: 5rem;
+    -moz-border-radius-topleft: 15rem;
+    -moz-border-radius-topright: 5rem;
+    border-top-left-radius: 15rem;
+    border-top-right-radius: 5rem;
+    bottom: 0rem;
+    right: 19rem;
+    z-index: 1;
 }
 .chooseDoctor__item {
     -webkit-display: flex;
@@ -110,6 +136,14 @@
     align-items: center;
     gap: 4rem;
 }
+.chooseDoctor__left .findDoctor__form {
+    position: absolute;
+    width: 22rem;
+    bottom: 8rem;
+    right: 8rem;
+    opacity: 1;
+    visibility: visible;
+}
 .chooseDoctor__description p{
     font-size: 1.2rem;
     font-weight: bold;
@@ -122,7 +156,7 @@
     position: absolute;
     right: 2rem;
     bottom: 5rem;
-    width: 30%;
+    width: 100%;
     background-color: var(--white-color);
     border-radius: 1rem;
     margin-top: -17rem;
@@ -151,6 +185,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .chooseDoctor__why--item p{
     color: var(--primary-color);
     font-weight: bold;
@@ -162,6 +197,11 @@
     line-height: 2;
 }
 .chooseDoctor__why--item{
+    display: grid;
+    justify-items: flex-start;
+    align-items: center;
+    justify-content: unset;
+    grid-template-columns: auto 1fr;
     -webkit-transition: all 1000ms ease-in-out;
     -o-transition: all 1000ms ease-in-out;
     transition: all 1000ms ease-in-out;
@@ -178,6 +218,9 @@
     border: 0.35rem double;
     box-shadow: 0rem 0.5rem 1.3rem 0.05rem rgb(143 134 134 / 50%);
 }
+.chooseDoctor__right{
+    grid-area: chooseContent;
+}
 .chooseDoctor__right h2{
     font-size: 4rem;
     color: var(--primary-color);
@@ -189,6 +232,34 @@
     line-height: 1.8;
 }
 
+@media screen and (max-width: 1400px){
+    .findDoctor__form{
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .chooseDoctor__imgBG .chooseDoctor__bg:nth-child(1) {
+        width: 46%;
+    }
+    .chooseDoctor__imgBG .chooseDoctor__bg:nth-child(2) {
+        width: 50%;
+    }
+    .chooseDoctor__left img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 1000px){
+    .chooseDoctor__left{
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .chooseDoctor{
+        padding-bottom: 5.7em;
+    }
+
+}
 /* //////// animations ////////// */
 @keyframes goTop {
     0% {
