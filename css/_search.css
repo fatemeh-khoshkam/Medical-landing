@@ -76,7 +76,7 @@
     cursor: pointer;
     color: var(--primary-color-7);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 1rem;
 }
 .popularSearch__content{
