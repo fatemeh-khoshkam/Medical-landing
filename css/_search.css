@@ -92,7 +92,7 @@
     padding: 3rem 1rem;
     border-radius: 0.5rem;
     align-items: center;
-    transition: all 1500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 .popularSearch__item:hover, .popularSearch__item:focus {
     color: var(--main-color);
