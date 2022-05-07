@@ -1,0 +1,11 @@
+.swiper-backface-hidden .swiper-slide {
+    padding: 1%;
+}
+.swiper{
+    height: fit-content;
+    display: grid;
+}
+.swiper-pagination{
+    bottom: -6rem !important;
+    padding: 6rem !important;
+}
