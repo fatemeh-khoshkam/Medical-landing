@@ -159,7 +159,7 @@ header{
   background-color: #cfe6fc73;
   box-shadow: -0.5rem 0rem 1rem #b9c7e15c, 0.5rem 0.2rem 1rem #b5b9c1;
   z-index: 1;
-  animation: expand 20000ms infinite linear;
+  animation: expand 15000ms infinite linear;
 }
 .header__img .header__icon:nth-child(5) i:nth-child(1){
   bottom: 17rem;

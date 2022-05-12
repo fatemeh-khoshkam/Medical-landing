@@ -67,15 +67,39 @@ function toggleMenu() {
 }
 
 /***  slider ***/
-var swiper = new Swiper('.mySwiper', {
-    speed: 600,
-    parallax: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    nav:true,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        700:{
+            items:2
+        },
+        900:{
+          items:3
+        },
+        1000:{
+            items:4
+        }
+    } ,
+    navText: ["◀","▶"]
+  });
+
+/* loader */
+///// preloader
+let overlay = document.getElementById("preloader");
+window.addEventListener('load', function () {
+    overlay.style.display = 'none';
+})
+
+
+/* search remove tags */
+const searchTagDeleteIcons = document.querySelectorAll(".searchBar__tags .btn i");
+searchTagDeleteIcons.forEach((item) => {
+    item.addEventListener("click", function () {
+        item.parentElement.remove();
+    });
 });

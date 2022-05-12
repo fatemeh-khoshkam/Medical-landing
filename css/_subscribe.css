@@ -19,6 +19,7 @@
 .subscribe__input button{
     margin-left: -13rem;
     background-color: var(--primary-color);
+    border: 0.1rem solid var(--primary-color);
 }
 .subscribe__box .form-group{
     position: inherit;

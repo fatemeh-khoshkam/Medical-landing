@@ -43,7 +43,11 @@
     color: var(--main-color);
     background: var(--primary-color-1);
 }
-
+.searchBar__tags .btn i{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 /* popular search */
 .popularSearch{
     padding-top: 20rem;

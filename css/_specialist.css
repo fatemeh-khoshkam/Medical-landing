@@ -91,7 +91,24 @@
     box-shadow: 0.09rem 0rem 1.5rem 0 rgb(59 102 229 / 44%);
 }
 .specialist__item:hover .specialist__image button{
-    bottom: 3.5rem;
     opacity: 1;
     z-index: 3;
+}
+.owl-carousel.owl-drag .owl-item {
+    padding: 2rem 0;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 16px !important;
+    height: 4px !important;
+    margin: 3px 5px !important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--main-color) !important;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    color: #FFF !important;
+    font-size: 8px !important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: var(--main-color) !important;
 }
