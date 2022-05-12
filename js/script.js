@@ -103,3 +103,44 @@ searchTagDeleteIcons.forEach((item) => {
         item.parentElement.remove();
     });
 });
+
+
+/* animate */
+window.addEventListener('scroll', () => {
+    var element = document.querySelector('.findDoctor__searchBar');
+    var position = element.getBoundingClientRect();
+
+    if (position.top < window.innerHeight && position.bottom >= 0) {
+        $('.findDoctor__searchBar').addClass("animate__fadeInRight");
+    } else {
+        $('.findDoctor__searchBar').removeClass("animate__fadeInRight");
+    }
+});
+
+window.addEventListener('scroll', () => {
+    var element = document.querySelector('.chooseDoctor__banner');
+    var position = element.getBoundingClientRect();
+
+    if (position.top < window.innerHeight && position.bottom >= 0) {
+        $('.chooseDoctor__banner').addClass("animate__fadeInLeft");
+    } else {
+        $('.chooseDoctor__banner').removeClass("animate__fadeInLeft");
+    }
+}); 
+
+function animateHeroImg(){
+    var element = document.querySelector('.hero_bg');
+    var position = element.getBoundingClientRect();
+
+    if (position.top < window.innerHeight && position.bottom >= 0) {
+        $('.hero_bg').addClass("animate__fadeInRight");
+    } else {
+        $('.hero_bg').removeClass("animate__fadeInRight");
+    }
+}
+window.addEventListener('scroll', () => {
+    animateHeroImg();
+});
+window.addEventListener('load', () => {
+    animateHeroImg();
+});
