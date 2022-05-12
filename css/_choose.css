@@ -222,14 +222,13 @@
     grid-area: chooseContent;
 }
 .chooseDoctor__right h2{
-    font-size: 4rem;
+    font-size: clamp(3rem,5vw,4rem);
     color: var(--primary-color);
-    line-height: 1.5;
 }
 .chooseDoctor__right:nth-child(2){
     color: var(--primary-color-7);
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 @media screen and (max-width: 1400px){

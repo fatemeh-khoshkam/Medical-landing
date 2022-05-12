@@ -6,8 +6,9 @@
     padding-bottom: 5rem;
 }
 .specialist__title h2{
-    font-size: 4rem;
+    font-size: clamp(3rem,5vw,4rem);
     color: var(--primary-color);
+    text-align: center;
 }
 .specialist__descrip{
     color: var(--primary-color-7);
