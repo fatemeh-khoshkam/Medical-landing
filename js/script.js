@@ -91,8 +91,10 @@ $('.owl-carousel').owlCarousel({
 /* loader */
 ///// preloader
 let overlay = document.getElementById("preloader");
-window.addEventListener('load', function () {
-    overlay.style.display = 'none';
+window.addEventListener('load', function () {  
+    setTimeout(() => {
+        overlay.style.display = 'none';
+    }, 1000);
 })
 
 
