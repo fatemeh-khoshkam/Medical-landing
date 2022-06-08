@@ -9,7 +9,7 @@ https://dribbble.com/shots/16148550/attachments/8003722?mode=media
 
 ## General info
 - :arrow_right:	This project is a medical landing page :syringe:
-- :arrow_right:	Beautiful animations when you scroll an load
+- :arrow_right:	Beautiful animations when you scroll and load
 - :arrow_right:	Responsive
 
 ## Technologies
